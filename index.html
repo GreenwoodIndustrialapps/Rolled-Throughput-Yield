@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RTY Support</title>
+<style>
+:root {
+--blue-start: #4A90E2;
+--blue-end: #2563EB;
+--text: #1A1A1A;
+--muted: #6B7280;
+--bg: #F9FAFB;
+--card: #FFFFFF;
+--border: #E5E7EB;
+}
+* { box-sizing: border-box; }
+body {
+margin: 0;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+background: var(--bg);
+color: var(--text);
+line-height: 1.6;
+}
+.hero {
+background: linear-gradient(135deg, var(--blue-start), var(--blue-end));
+color: white;
+padding: 60px 24px 50px;
+text-align: center;
+}
+.hero h1 {
+margin: 0 0 8px;
+font-size: 2.2rem;
+font-weight: 700;
+}
+.hero p {
+margin: 0;
+font-size: 1.1rem;
+opacity: 0.92;
+}
+.container {
+max-width: 680px;
+margin: -30px auto 60px;
+padding: 0 20px;
+}
+.card {
+background: var(--card);
+border: 1px solid var(--border);
+border-radius: 14px;
+padding: 28px 30px;
+margin-bottom: 20px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.card h2 {
+margin-top: 0;
+font-size: 1.25rem;
+color: var(--text);
+}
+.card p, .card li {
+color: #333;
+}
+a.button {
+display: inline-block;
+margin-top: 10px;
+padding: 12px 22px;
+background: linear-gradient(135deg, var(--blue-start), var(--blue-end));
+color: white !important;
+text-decoration: none;
+border-radius: 10px;
+font-weight: 600;
+}
+.faq-item {
+margin-bottom: 18px;
+}
+.faq-item h3 {
+margin: 0 0 6px;
+font-size: 1.05rem;
+}
+footer {
+text-align: center;
+color: var(--muted);
+font-size: 0.9rem;
+padding-bottom: 40px;
+}
+footer a {
+color: var(--muted);
+}
+</style>
+</head>
+<body>
+<div class="hero">
+<h1>RTY Support</h1>
+<p>See where your process is really losing yield</p>
+</div>
+<div class="container">
+<div class="card">
+<h2>Contact</h2>
+<p>Have a question, found a bug, or want to request a feature? Reach out and I'll get back to you as soon as I can.</p>
+<a class="button" href="mailto:industrialapps@yahoo.com">Email Support</a>
+</div>
+<div class="card">
+<h2>About the App</h2>
+<p>RTY (Rolled Throughput Yield) shows how many units make it through every step of a process first time, with no rework and no scrap. List your steps, enter whatever figures you have for each one, and the app works out the rolled throughput yield, the normalised yield, and a Pareto chart that ranks the steps by how much of the loss each one causes.</p>
+<p>A Funnel tab acts out your process so you can see where units drop out, and a What-if tab lets you test improvements, find the biggest win, and work out which steps need to improve to reach a target RTY.</p>
+</div>
+<div class="card">
+<h2>Frequently Asked Questions</h2>
+<div class="faq-item">
+<h3>What iOS version do I need?</h3>
+<p>RTY requires iOS 16 or later, on iPhone.</p>
+</div>
+<div class="faq-item">
+<h3>Why is my RTY lower than every single step?</h3>
+<p>RTY multiplies the first-pass yield of every step together, so it is always lower than the weakest step. Three steps at 95%, 98% and 90% each look respectable, but together only about 84 units in every 100 come through clean. That gap is the point of the measure.</p>
+</div>
+<div class="faq-item">
+<h3>What do I enter for each step?</h3>
+<p>Any two of units in, units out and % pass, or just a % pass, or just a Cpk. Units out means good units that move on to the next step first time. The figures you typed are shown in bold, and the ones the app worked out are shown lighter. The reference screen inside the app (tap "What do these numbers mean?" on the Setup tab) explains each one.</p>
+</div>
+<div class="faq-item">
+<h3>How is a Cpk turned into a pass rate?</h3>
+<p>The app assumes a centred process with a normal distribution and no 1.5 sigma shift. Under that assumption a Cpk of 1.00 passes about 99.73% of units, and 1.33 passes about 99.99%. Real processes drift, so if you have actual counts of units in and out, use those instead.</p>
+</div>
+<div class="faq-item">
+<h3>Why does the Funnel give a different result each time?</h3>
+<p>Each unit in the Funnel passes or fails at random, using the step's pass rate as the chance, just like real production. A single run will rarely match the RTY exactly. The text under the Funnel shows the expected figure and the range most runs should land inside.</p>
+</div>
+<div class="faq-item">
+<h3>What is free, and what needs the full version?</h3>
+<p>Entering steps, the RTY and normalised yield, the Pareto, the Funnel, and the What-if tab on the built-in example process are all free. A single one-time purchase unlocks saving your data, CSV export, the PDF report, and What-if on your own data. There is no subscription.</p>
+</div>
+<div class="faq-item">
+<h3>Is my data stored anywhere?</h3>
+<p>No data is collected or transmitted. Everything you enter stays on your device. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+</div>
+<div class="faq-item">
+<h3>How do I request a feature or report a bug?</h3>
+<p>Email support using the button above. If you're reporting an issue, include your device model and iOS version.</p>
+</div>
+</div>
+</div>
+<footer>
+&copy; 2026 Rolled Throughput Yield. All rights reserved. &middot; <a href="privacy.html">Privacy Policy</a> &middot; <a href="disclaimer.html">Disclaimer</a> &middot; <a href="about.html">About</a>
+</footer>
+</body>
+</html>

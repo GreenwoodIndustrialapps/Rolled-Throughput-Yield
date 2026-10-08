@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RTY Disclaimer</title>
+<style>
+:root {
+--blue-start: #4A90E2;
+--blue-end: #2563EB;
+--text: #1A1A1A;
+--muted: #6B7280;
+--bg: #F9FAFB;
+--card: #FFFFFF;
+--border: #E5E7EB;
+}
+* { box-sizing: border-box; }
+body {
+margin: 0;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+background: var(--bg);
+color: var(--text);
+line-height: 1.6;
+}
+.hero {
+background: linear-gradient(135deg, var(--blue-start), var(--blue-end));
+color: white;
+padding: 60px 24px 50px;
+text-align: center;
+}
+.hero h1 {
+margin: 0 0 8px;
+font-size: 2.2rem;
+font-weight: 700;
+}
+.hero p {
+margin: 0;
+font-size: 1.05rem;
+opacity: 0.92;
+}
+.container {
+max-width: 680px;
+margin: -30px auto 60px;
+padding: 0 20px;
+}
+.card {
+background: var(--card);
+border: 1px solid var(--border);
+border-radius: 14px;
+padding: 28px 30px;
+margin-bottom: 20px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.card h2 {
+margin-top: 0;
+font-size: 1.2rem;
+}
+.card p, .card li {
+color: #333;
+}
+.card ul {
+padding-left: 20px;
+}
+.card li {
+margin-bottom: 8px;
+}
+a.button {
+display: inline-block;
+margin-top: 10px;
+padding: 12px 22px;
+background: linear-gradient(135deg, var(--blue-start), var(--blue-end));
+color: white !important;
+text-decoration: none;
+border-radius: 10px;
+font-weight: 600;
+}
+.updated {
+color: var(--muted);
+font-size: 0.9rem;
+text-align: center;
+margin-top: -10px;
+}
+footer {
+text-align: center;
+color: var(--muted);
+font-size: 0.9rem;
+padding-bottom: 40px;
+}
+footer a {
+color: var(--muted);
+}
+</style>
+</head>
+<body>
+<div class="hero">
+<h1>Disclaimer</h1>
+<p>RTY (Rolled Throughput Yield)</p>
+</div>
+<div class="container">
+<div class="card">
+<h2>Overview</h2>
+<p class="updated" style="text-align:left; margin-top:0;">Last updated: October 8, 2026</p>
+<p>RTY is a calculation tool. It multiplies the first-pass yields of the steps you enter to give a rolled throughput yield, works out a normalised yield and a Pareto of yield loss, and lets you test what-if changes. This page explains the limits of what that means in practice.</p>
+</div>
+<div class="card">
+<h2>Results depend entirely on your data</h2>
+<p>Every figure the app produces is only as accurate as the numbers you provide. If a step's units in, units out, pass rate or Cpk is entered incorrectly, the RTY, the Pareto and everything built on them will be wrong too, even though the arithmetic is correct. Always review what you have entered before relying on the results.</p>
+</div>
+<div class="card">
+<h2>Measure every step the same way</h2>
+<p>RTY only means something when every step is counted on the same basis: first-pass good units against units started at that step. Mixing figures that include rework with figures that do not will make a step look better than it is, and the RTY will be overstated.</p>
+</div>
+<div class="card">
+<h2>A Cpk is not a measured pass rate</h2>
+<p>When you enter a Cpk, the app converts it to a pass rate by assuming a centred process with a normal distribution and no 1.5 sigma shift. Real processes drift, are not always normal, and are rarely perfectly centred, so the pass rate from a Cpk is usually better than what the process delivers over the long term. Real counts of units in and out are the more honest figures.</p>
+</div>
+<div class="card">
+<h2>The Funnel and What-if are illustrations</h2>
+<p>The Funnel is a random simulation built from your pass rates, and no two runs are the same. The What-if tab and its target solver are arithmetic, not forecasts. They do not know whether an improvement is achievable, what it would cost, or whether it would affect other steps. Use them to explore and to prioritise, not to predict.</p>
+</div>
+<div class="card">
+<h2>Build trust before relying on it</h2>
+<p>Before using RTY for a decision that matters, run a process through it where you already know the answer from another method or tool. Comparing what RTY produces against that known result is the quickest way to build genuine confidence in it, the same way you would validate any new tool before putting it to real use.</p>
+</div>
+<div class="card">
+<h2>Not a substitute for professional judgment</h2>
+<p>RTY does not replace calibrated measurement equipment, a formal quality management system, statistical training, or your organization's own quality procedures. It is a calculation aid intended to support someone who already understands what these figures mean and how they apply to their specific process.</p>
+</div>
+<div class="card">
+<h2>Decisions remain your responsibility</h2>
+<p>Any decision made using this app's output, including where to focus improvement effort or whether a process is performing well enough, is made entirely at your own discretion. The app calculates numbers; it does not make quality decisions, and the developer is not responsible for the consequences of decisions made using them.</p>
+</div>
+<div class="card">
+<h2>No warranty</h2>
+<p>RTY is provided "as is," without warranty of any kind, express or implied, including but not limited to fitness for a particular purpose. The developer is not liable for any loss, damage, or consequence arising from the use of this app or reliance on its output.</p>
+</div>
+<div class="card">
+<h2>Questions</h2>
+<p>Questions about this disclaimer can be directed to:</p>
+<a class="button" href="mailto:industrialapps@yahoo.com">Email Me</a>
+</div>
+</div>
+<footer>
+&copy; 2026 Rolled Throughput Yield. All rights reserved. &middot; <a href="index.html">Support</a> &middot; <a href="privacy.html">Privacy Policy</a> &middot; <a href="about.html">About</a>
+</footer>
+</body>
+</html>

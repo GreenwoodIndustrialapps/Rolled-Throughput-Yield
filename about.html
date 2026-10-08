@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About RTY</title>
+<style>
+:root {
+--blue-start: #4A90E2;
+--blue-end: #2563EB;
+--text: #1A1A1A;
+--muted: #6B7280;
+--bg: #F9FAFB;
+--card: #FFFFFF;
+--border: #E5E7EB;
+}
+* { box-sizing: border-box; }
+body {
+margin: 0;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+background: var(--bg);
+color: var(--text);
+line-height: 1.6;
+}
+.hero {
+background: linear-gradient(135deg, var(--blue-start), var(--blue-end));
+color: white;
+padding: 60px 24px 50px;
+text-align: center;
+}
+.hero h1 {
+margin: 0 0 8px;
+font-size: 2.2rem;
+font-weight: 700;
+}
+.hero p {
+margin: 0;
+font-size: 1.05rem;
+opacity: 0.92;
+}
+.container {
+max-width: 680px;
+margin: -30px auto 60px;
+padding: 0 20px;
+}
+.card {
+background: var(--card);
+border: 1px solid var(--border);
+border-radius: 14px;
+padding: 28px 30px;
+margin-bottom: 20px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.card h2 {
+margin-top: 0;
+font-size: 1.2rem;
+}
+.card p, .card li {
+color: #333;
+}
+a.button {
+display: inline-block;
+margin-top: 10px;
+padding: 12px 22px;
+background: linear-gradient(135deg, var(--blue-start), var(--blue-end));
+color: white !important;
+text-decoration: none;
+border-radius: 10px;
+font-weight: 600;
+}
+footer {
+text-align: center;
+color: var(--muted);
+font-size: 0.9rem;
+padding-bottom: 40px;
+}
+footer a {
+color: var(--muted);
+}
+</style>
+</head>
+<body>
+<div class="hero">
+<h1>About RTY</h1>
+<p>35 years of chasing hidden losses on the shop floor, built into an app.</p>
+</div>
+<div class="container">
+<div class="card">
+<h2>A career in quality</h2>
+<p>I've spent 35 years in quality, Six Sigma, and Lean within automotive manufacturing, and one lesson keeps coming back: a process can look fine step by step and still be losing a surprising amount along the way. Every station reports a yield in the high nineties, the final inspection passes most of what reaches it, and yet a lot of good effort goes into sorting, fixing and redoing work that a simple final yield figure never shows.</p>
+</div>
+<div class="card">
+<h2>The gap</h2>
+<p>Rolled throughput yield is the honest way to see that, because it multiplies every step together and counts only what passes first time. But working it out meant a spreadsheet, and even then the next question, which step is really costing us the most, took more effort again. It was never quite at hand standing on the shop floor with the numbers from the last shift.</p>
+</div>
+<div class="card">
+<h2>Why RTY</h2>
+<p>So I built the tool I wished I'd had, as a companion to <a href="https://greenwoodindustrialapps.github.io/Process-Capability/about.html">Process Capability App</a> and <a href="https://greenwoodindustrialapps.github.io/Scatter-Plot/about.html">Scatter Plot</a>. List your steps and enter whatever figures you have for each one, whether that is units in and out, a pass rate, or a Cpk, and the app gives you the rolled throughput yield and a normalised yield you can compare across processes of different lengths.</p>
+<p>From there, a Pareto of yield loss shows the few steps responsible for most of it, a Funnel lets you watch units drop out of your process, and a What-if tab lets you try improvements and work backwards from a target RTY to see which steps would need to improve, and by how much.</p>
+<p>Everything runs entirely on your own device. Nothing you enter ever leaves your phone, which matters in a manufacturing environment as much as it does anywhere else.</p>
+</div>
+<div class="card">
+<h2>Get in touch</h2>
+<p>Questions, feedback, or just want to talk shop about yield and where it goes? I'd like to hear from you.</p>
+<a class="button" href="mailto:industrialapps@yahoo.com">Email Me</a>
+</div>
+</div>
+<footer>
+&copy; 2026 Rolled Throughput Yield. All rights reserved. &middot; <a href="index.html">Support</a> &middot; <a href="privacy.html">Privacy Policy</a> &middot; <a href="disclaimer.html">Disclaimer</a>
+</footer>
+</body>
+</html>
